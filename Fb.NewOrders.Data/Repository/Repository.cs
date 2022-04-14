@@ -3,10 +3,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
 using FB.NewOrders.Data.Context;
+using FB.NewOrders.Domain.Models;
 using System.Collections.Generic;
-using FB.NewOrders.Business.Models;
 using Microsoft.EntityFrameworkCore;
-using FB.NewOrders.Business.Interfaces;
+using FB.NewOrders.Domain.Interfaces;
 
 namespace FB.NewOrders.Data.Repository
 {

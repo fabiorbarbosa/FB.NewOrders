@@ -1,4 +1,4 @@
-namespace FB.NewOrders.Business.Interfaces
+namespace FB.NewOrders.Domain.Interfaces
 {
     public interface IProdutoRepository
     {

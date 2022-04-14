@@ -2,6 +2,7 @@ using System;
 using StackExchange.Redis;
 using System.Threading.Tasks;
 using FB.NewOrders.Business.Interfaces;
+using FB.NewOrders.Domain.Models;
 
 namespace Fb.NewOrders.Business.Services
 {
@@ -15,12 +16,12 @@ namespace Fb.NewOrders.Business.Services
         _db = _redisConnection.GetDatabase();
     }
 
-    public Task<bool> Add<TEntity>(TEntity entity, string id, int expireMinutes)
+    public Task<bool> Add<TEntity>(TEntity entity, string id, int expireMinutes) where TEntity : Entity
     {
       throw new NotImplementedException();
     }
 
-    public Task<TEntity> Get<TEntity>(string id)
+    public Task<TEntity> Get<TEntity>(string id) where TEntity : Entity
     {
       throw new NotImplementedException();
     }

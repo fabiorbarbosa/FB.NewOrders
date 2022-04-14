@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using FB.NewOrders.Business.Models;
+using FB.NewOrders.Domain.Models;
 
-namespace FB.NewOrders.Business.Interfaces
+namespace FB.NewOrders.Domain.Interfaces
 {
     public interface IRepository<TEntity> : IDisposable where TEntity : Entity
     {

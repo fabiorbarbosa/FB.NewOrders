@@ -1,4 +1,4 @@
-using FB.NewOrders.Business.Configuration;
+using Fb.NewOrders.Infra.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -21,6 +21,7 @@ namespace FB.NewOrders.Api
         {
             // Config REDIS
             services.RegisterRedis(Configuration);
+            services.RegisterDbContext(Configuration);
             
             services.AddCors();
             services.AddControllers();

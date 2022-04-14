@@ -1,6 +1,6 @@
 using System;
 
-namespace FB.NewOrders.Business.Models
+namespace FB.NewOrders.Domain.Models
 {
     public abstract class Entity
     {
