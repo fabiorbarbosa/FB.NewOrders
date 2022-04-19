@@ -2,15 +2,16 @@ using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using FB.NewOrders.Domain.Entity;
+using FB.NewOrders.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace FB.NewOrders.Data.Context
 {
 	public class NewOrdersDbContext : DbContext
 	{
-		public DbSet<Produto> Produtos { get; set; }
+		public DbSet<Product> Products { get; set; }
+		public DbSet<Provider> Providers { get; set; }
+		public DbSet<User> Users { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{

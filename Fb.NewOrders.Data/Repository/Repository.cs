@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
 using FB.NewOrders.Data.Context;
-using FB.NewOrders.Domain.Entity;
+using FB.NewOrders.Domain.Entities;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using FB.NewOrders.Domain.Interfaces;

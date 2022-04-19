@@ -1,12 +1,12 @@
 using System;
 
-namespace FB.NewOrders.Domain.Entity
+namespace FB.NewOrders.Domain.Entities
 {
     public abstract class Entity
     {
         public Guid Id { get; set; }
-        public DateTime DataCadastro { get; set; }
-        public DateTime? DataAlteracao { get; set; }
+        public DateTime DateCreate { get; set; }
+        public DateTime? DateChange { get; set; }
 
         public Entity()
         {

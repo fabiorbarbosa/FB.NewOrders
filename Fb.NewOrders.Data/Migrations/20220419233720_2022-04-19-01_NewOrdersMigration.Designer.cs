@@ -4,14 +4,16 @@ using FB.NewOrders.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FB.NewOrders.Data.Migrations
 {
     [DbContext(typeof(NewOrdersDbContext))]
-    partial class NewOrdersDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220419233720_2022-04-19-01_NewOrdersMigration")]
+    partial class _2022041901_NewOrdersMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

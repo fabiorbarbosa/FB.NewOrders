@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using FB.NewOrders.Domain.Entity;
+using FB.NewOrders.Domain.Entities;
 
 namespace FB.NewOrders.Business.Interfaces
 {
