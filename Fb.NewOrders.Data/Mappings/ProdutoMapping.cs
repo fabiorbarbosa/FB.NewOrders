@@ -1,4 +1,4 @@
-using FB.NewOrders.Domain.Models;
+using FB.NewOrders.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

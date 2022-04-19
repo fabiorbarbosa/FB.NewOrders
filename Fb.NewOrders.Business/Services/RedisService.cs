@@ -2,7 +2,7 @@ using System;
 using StackExchange.Redis;
 using System.Threading.Tasks;
 using FB.NewOrders.Business.Interfaces;
-using FB.NewOrders.Domain.Models;
+using FB.NewOrders.Domain.Entity;
 
 namespace Fb.NewOrders.Business.Services
 {

@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using FB.NewOrders.Domain.Models;
+using FB.NewOrders.Domain.Entity;
 
 namespace FB.NewOrders.Domain.Interfaces
 {
-    public interface IRepository<TEntity> : IDisposable where TEntity : Entity
+    public interface IRepository<TEntity> : IDisposable where TEntity : Entity.Entity
     {
          Task<TEntity> Get(Guid id);
          Task<IList<TEntity>> GetAll();

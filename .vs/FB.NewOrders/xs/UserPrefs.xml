@@ -1,11 +1,15 @@
-﻿<Properties StartupConfiguration="{F518AB7B-DE44-4C4B-84F0-1360F45A4EC4}|Default">
-  <MonoDevelop.Ide.ItemProperties.FB.NewOrders.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+﻿<Properties StartupConfiguration="{F518AB7B-DE44-4C4B-84F0-1360F45A4EC4}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.ItemProperties.01_220-_220API.FB.NewOrders.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FB.NewOrders" expanded="True">
-            <Node name="FB.NewOrders.Data" selected="True" />
+            <Node name="01 - API" expanded="True" />
+            <Node name="04 - Data" expanded="True">
+              <Node name="FB.NewOrders.Data" selected="True" />
+            </Node>
+            <Node name="05 - Domain" expanded="True" />
           </Node>
         </State>
       </Pad>

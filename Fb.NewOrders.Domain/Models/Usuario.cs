@@ -1,4 +1,4 @@
-namespace FB.NewOrders.Domain.Models
+namespace FB.NewOrders.Domain.Entity
 {
     public class Usuario : Entity
     {

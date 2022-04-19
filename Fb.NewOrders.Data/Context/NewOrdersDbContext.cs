@@ -2,8 +2,9 @@ using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using FB.NewOrders.Domain.Models;
+using FB.NewOrders.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace FB.NewOrders.Data.Context
 {
@@ -11,9 +12,9 @@ namespace FB.NewOrders.Data.Context
 	{
 		public DbSet<Produto> Produtos { get; set; }
 
-		public NewOrdersDbContext(DbContextOptions<NewOrdersDbContext> options) : base(options)
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			
+			optionsBuilder.UseSqlServer(@"Server=127.0.0.1;Database=NewOrders;User Id=sa;Password=Rep12345@!;");
 		}
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)

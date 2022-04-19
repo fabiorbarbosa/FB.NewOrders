@@ -1,6 +1,6 @@
 using FB.NewOrders.Data.Context;
 using FB.NewOrders.Domain.Interfaces;
-using FB.NewOrders.Domain.Models;
+using FB.NewOrders.Domain.Entity;
 
 namespace FB.NewOrders.Data.Repository
 {
