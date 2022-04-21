@@ -7,7 +7,7 @@ namespace Fb.NewOrders.Infra.Configuration
 {
 	public static class DbContextConfig
 	{
-		public static IServiceCollection RegisterDbContext(this IServiceCollection services, IConfiguration configuration) {
+		public static IServiceCollection AddDbContext(this IServiceCollection services, IConfiguration configuration) {
 			return services.AddDbContext<NewOrdersDbContext>(options =>
 				options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"))
 			);

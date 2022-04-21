@@ -35,17 +35,17 @@ namespace FB.NewOrders.Data.Context
 		public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
 		{
 				foreach (var entry in ChangeTracker.Entries().Where(entry => 
-																														entry.Entity.GetType().GetProperty("DataCadastro") != null ||
-																														entry.Entity.GetType().GetProperty("DataAlteracao") != null))
+																														entry.Entity.GetType().GetProperty("DateCreate") != null ||
+																														entry.Entity.GetType().GetProperty("DateChange") != null))
 				{
 						if (entry.State == EntityState.Added)
 						{
-								entry.Property("DataCadastro").CurrentValue = DateTime.Now;
-								entry.Property("DataAlteracao").IsModified = false;
+								entry.Property("DateCreate").CurrentValue = DateTime.Now;
+								entry.Property("DateChange").IsModified = false;
 						} else if (entry.State == EntityState.Modified)
 						{
-								entry.Property("DataAlteracao").CurrentValue = DateTime.Now;
-								entry.Property("DataCadastro").IsModified = false;
+								entry.Property("DateChange").CurrentValue = DateTime.Now;
+								entry.Property("DateCreate").IsModified = false;
 						}
 				}
 				return base.SaveChangesAsync(cancellationToken);

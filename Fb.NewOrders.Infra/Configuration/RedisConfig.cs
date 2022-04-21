@@ -8,7 +8,7 @@ namespace Fb.NewOrders.Infra.Configuration
 {
     public static class RedisConfig
     {
-        public static IServiceCollection RegisterRedis(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddRedis(this IServiceCollection services, IConfiguration configuration)
         {
             var muxer = ConnectionMultiplexer.Connect(configuration.GetConnectionString("Redis"));
             services.AddScoped<IRedisService, RedisService>();

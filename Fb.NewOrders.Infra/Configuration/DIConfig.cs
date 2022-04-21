@@ -5,7 +5,7 @@ namespace Fb.NewOrders.Infra.Configuration
 {
     public static class DIConfig
     {
-        public static IServiceCollection RegisterServices(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddDI(this IServiceCollection services, IConfiguration configuration)
         {
             return services;
         }
